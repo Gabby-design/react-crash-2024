@@ -18,7 +18,7 @@ const HomeCards = () => {
               Browse Jobs
             </a>
           </Card>
-          <Card>
+          <Card bg="bg-indigo-100">
             <h2 class="text-2xl font-bold">For Employers</h2>
             <p class="mt-2 mb-4">
               List your job to find the perfect developer for the role
