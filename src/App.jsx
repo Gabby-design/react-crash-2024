@@ -1,68 +1,12 @@
-import React from "react";
+import Hero from "./components/Hero";
+import Navbar from "./components/Navbar";
 
 const App = () => {
   return (
     <>
-      <nav class="bg-indigo-700 border-b border-indigo-500">
-        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-          <div class="flex h-20 items-center justify-between">
-            <div class="flex flex-1 items-center justify-center md:items-stretch md:justify-start">
-              {/* <!-- Logo --> */}
-              <a
-                class="flex flex-shrink-0 items-center mr-4"
-                href="/index.html"
-              >
-                <img
-                  class="h-10 w-auto"
-                  src="images/logo.png"
-                  alt="React Jobs"
-                />
-                <span class="hidden md:block text-white text-2xl font-bold ml-2">
-                  React Jobs
-                </span>
-              </a>
-              <div class="md:ml-auto">
-                <div class="flex space-x-2">
-                  <a
-                    href="/index.html"
-                    class="text-white bg-black hover:bg-gray-900 hover:text-white rounded-md px-3 py-2"
-                  >
-                    Home
-                  </a>
-                  <a
-                    href="/jobs.html"
-                    class="text-white hover:bg-gray-900 hover:text-white rounded-md px-3 py-2"
-                  >
-                    Jobs
-                  </a>
-                  <a
-                    href="/add-job.html"
-                    class="text-white hover:bg-gray-900 hover:text-white rounded-md px-3 py-2"
-                  >
-                    Add Job
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </nav>
-
-      {/* <!-- Hero --> */}
-      <section class="bg-indigo-700 py-20 mb-4">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center">
-          <div class="text-center">
-            <h1 class="text-4xl font-extrabold text-white sm:text-5xl md:text-6xl">
-              Become a React Dev
-            </h1>
-            <p class="my-4 text-xl text-white">
-              Find the React job that fits your skills and needs
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section class="py-4">
+    <Navbar />
+    <Hero />
+           <section class="py-4">
         <div class="container-xl lg:container m-auto">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4 p-4 rounded-lg">
             <div class="bg-gray-100 p-6 rounded-lg shadow-md">
