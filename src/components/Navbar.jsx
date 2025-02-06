@@ -8,7 +8,7 @@ const Navbar = () => {
           <div class="flex flex-1 items-center justify-center md:items-stretch md:justify-start">
             {/* <!-- Logo --> */}
             <a class="flex flex-shrink-0 items-center mr-4" href="/index.html">
-              <img class="h-10 w-auto" src={Logo} alt="React Jobs" />
+              <img class="h-10 w-auto animate-spin" src={Logo} alt="React Jobs" />
               <span class="hidden md:block text-white text-2xl font-bold ml-2">
                 React Jobs
               </span>

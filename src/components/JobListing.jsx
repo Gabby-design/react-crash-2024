@@ -1,4 +1,5 @@
 import React from 'react'
+import { FaMapMarker } from 'react-icons/fa';
 
 const JobListing = ({job}) => {
   return (
@@ -17,7 +18,7 @@ const JobListing = ({job}) => {
 
         <div class="flex flex-col lg:flex-row justify-between mb-4">
           <div class="text-orange-700 mb-3">
-            <i class="fa-solid fa-location-dot text-lg"></i>
+            <FaMapMarker className='inline mb-1 mr-2' />
             {job.location}
           </div>
           <a
