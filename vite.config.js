@@ -3,8 +3,8 @@ import react from '@vitejs/plugin-react';
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: "/react-crash-2024/",
   plugins: [react()],
-  base: "/react-crash-2024",
   server: {
     port: 3000,
   },
