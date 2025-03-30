@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useParams, useLoaderData, useNavigate } from 'react-router-dom';
-// import { toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 
 const EditJobPage = ({ updateJobSubmit }) => {
   const job = useLoaderData();
@@ -39,7 +39,7 @@ const EditJobPage = ({ updateJobSubmit }) => {
 
     updateJobSubmit(updatedJob);
 
-    // toast.success('Job Updated Successfully');
+    toast.success('Job Updated Successfully');
 
     return navigate(`/jobs/${id}`);
   };

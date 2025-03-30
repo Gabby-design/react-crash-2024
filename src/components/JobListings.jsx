@@ -6,11 +6,11 @@ const JobListings = ({ isHome = false }) => {
   const [jobs, setJobs] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
+  useEffect(() => { 
     const fetchJobs = async () => {
       const apiUrl = isHome
-        ? "http://localhost:8000/jobs?_limit=3"
-        : "http://localhost:8000/jobs";
+         ? "/api/jobs?_limit=3"
+         : "/api/jobs";
       try {
         const res = await fetch(apiUrl);
         const data = await res.json();
@@ -20,10 +20,10 @@ const JobListings = ({ isHome = false }) => {
       } finally {
         setLoading(false);
       }
-    };
+    }
 
-    fetchJobs();
-  }, []);
+    fetchJobs()
+  }, [])
 
   return (
     <section className="bg-blue-50 px-4 py-10">
